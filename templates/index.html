@@ -1,22 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!--<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/style.css') }}">
     <title>Flask Simple List App</title>
 </head>
 
 <body>
-    <h1>Welcome to Listy</h1>
-    
-    <p>"Never put off until tomorrow what you can do today"</p>
-    
-    <p>Login now to kickstart your day!</p>
-    <form action="/login">
-        <input type="text" name="username"/>
-        <input type="submit" value="Login"/>
-    </form>
+    <div class=" container-fluid bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-8 col-xs-offset-2">
+                <h1>Tickity</h1>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="message"></div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-8 col-xs-offset-2">
+                <form action="/login">
+                    <input type="text" name="username" />
+                    <input class="login" type="submit" value="Login" />
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <h2>Login now to kickstart your day!</h2>
+
+    <!--<script>-->
+    <!--    let quote = '"Never put off until tomorrow what you can do today"';-->
+    <!--    let messages2 = [];-->
+    <!--    for (let i = 0; i < quote.length; i++) {-->
+    <!--        messages2 += quote[i];-->
+    <!--    }-->
+
+    <!--    let messages = messages2,-->
+    <!--        counter = 0,-->
+    <!--        target = document.getElementById("message");-->
+
+    <!--    setInterval(function() {-->
+    <!--        if (counter < messages.length) {-->
+    <!--            target.innerHTML += messages[counter];-->
+    <!--            counter++;-->
+
+    <!--        }-->
+
+    <!--    }, 100);-->
+    <!--</script>-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    </div>
 </body>
+
+
 </html>
